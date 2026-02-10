@@ -1,12 +1,13 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    window.location.href = "/sh-events.html";
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: "#1A1A1A", color: "#F5F0E8" }}>
+      <p style={{ fontFamily: "sans-serif", opacity: 0.5 }}>Redirecting...</p>
     </div>
   );
 };
